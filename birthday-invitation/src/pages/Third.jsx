@@ -78,7 +78,7 @@ function Third() {
     const handleYesSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:5000/api/invitations/yes', {
+            const response = await fetch('https://birthday-invitation-website-2.onrender.com/api/invitations/yes', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -114,7 +114,7 @@ function Third() {
     const handleNoSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:5000/api/invitations/no', {
+            const response = await fetch('https://birthday-invitation-website-2.onrender.com/api/invitations/no', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
