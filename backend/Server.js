@@ -14,7 +14,7 @@ app.use(express.json());
 
 // Allow CORS for your frontend URL (Vercel)
 const corsOptions = {
-    origin: 'https://birthday-invitation-website-d4x1.vercel.app/', // Replace with your Vercel frontend URL
+    origin: 'https://birthday-invitation-website-aman.vercel.app/', // Replace with your Vercel frontend URL
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true, // If you're sending cookies/tokens
 };
