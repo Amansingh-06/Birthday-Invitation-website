@@ -27,7 +27,7 @@ function Third() {
 
     // State for the thank you popup
     const [showThankYouPopup, setShowThankYouPopup] = useState(false);
-    const [showAwwpopup,setshowAwwpopup] = useState(false)
+    const [showAwwpopup, setshowAwwpopup] = useState(false)
 
     const formRef = useRef(null); // Reference to the form section
     const yesform = useRef(null);
@@ -167,7 +167,7 @@ function Third() {
                     <div className='location'>
                         <h1>Let me know you're coming</h1>
                         <p>25.11.2025 | 7:00PM (GMT+04:00)</p>
-                        <p onClick={handleMapClick} className='address clickable'>
+                        <p onClick={handleMapClick} className='address clickable text-red'>
                             || M95, sector 66, Noida ||
                         </p>
                         <button onClick={handleRespondClick} className='respond'>Please Respond</button>
