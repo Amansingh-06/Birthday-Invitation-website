@@ -166,7 +166,7 @@ function Third() {
                     </div>
                     <div className='location'>
                         <h1>Let me know you're coming</h1>
-                        <p>25.11.2025 | 7:00PM (GMT+04:00)</p>
+                        <p>06.01.2025 | 7:00PM (GMT+04:00)</p>
                         <p onClick={handleMapClick} className='address_clickable'>
                             || M95, sector 66, Noida ||
                         </p>
