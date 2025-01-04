@@ -11,7 +11,16 @@ dotenv.config();
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+
+// Allow CORS for your frontend URL (Vercel)
+const corsOptions = {
+    origin: 'https://birthday-invitation-website-d4x1.vercel.app/', // Replace with your Vercel frontend URL
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true, // If you're sending cookies/tokens
+};
+
+app.use(cors(corsOptions));
+
 app.use('/api/invitations', invitationRoutes);
 
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
