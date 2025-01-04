@@ -1,0 +1,46 @@
+.text-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    /* Ensures the text is vertically centered */
+   width: 100%;
+   background: #000;
+}
+
+.text {
+    font-size: 5rem;
+    letter-spacing: 20px;
+    color: wheat;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    /* Smooth fade-in animation */
+}
+
+/* Keyframes for the fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .text {
+        font-size: 3rem;
+        /* Adjust font size for tablets */
+        letter-spacing: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text {
+        font-size: 2rem;
+        /* Adjust font size for mobile screens */
+        letter-spacing: 5px;
+    }
+}

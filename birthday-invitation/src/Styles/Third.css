@@ -1,0 +1,245 @@
+.Third-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 55px 20px;
+    /* Adjusted padding for smaller screens */
+    background-image: url("https://hosting.renderforestsites.com/5699226/968282/media/807db705d74f9931f60ef38bbac111e8.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.RsvpCard {
+    padding: 30px 20px;
+    /* Adjusted padding for smaller screens */
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    /* Reduced gap for better spacing */
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    /* Restrict width for better alignment */
+    text-align: center;
+}
+
+.imgWrapper {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.imgWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the image scales correctly */
+}
+.location{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.RsvpCard h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.RsvpCard p {
+    font-size: 16px;
+    color: #666;
+}
+
+.respond {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    background-color: rgba(23, 17, 17, 0.8);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.respond:hover {
+    background: rgba(18, 16, 16, 0.9);
+}
+
+.formcard {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 30px;
+}
+
+.formwrapper {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-elemnt {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #007bff;
+    cursor: pointer;
+}
+
+.formcontent,
+.formcontent-no {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.firstSection,
+.secondSection {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    /* Adjust for smaller screens */
+}
+.first{
+    display: flex;
+    gap: 18px;
+}
+
+.firstname,
+.secondname,
+.thirdname,
+.fourthname,
+.fifth {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    /* Adjusted width for alignment */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    /* Ensure input fields stretch */
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+    /* Fixed height for better layout */
+}
+
+.submit {
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.thank-you-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .RsvpCard {
+        padding: 20px 15px;
+        gap: 15px;
+    }
+
+    .RsvpCard h1 {
+        font-size: 20px;
+    }
+
+    .RsvpCard p {
+        font-size: 14px;
+    }
+
+    .formwrapper {
+        padding: 15px;
+    }
+
+    .form-elemnt {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .RsvpCard h1 {
+        font-size: 18px;
+    }
+
+    .RsvpCard p {
+        font-size: 12px;
+    }
+
+    .submit {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    textarea {
+        height: 80px;
+    }
+}
